@@ -25,7 +25,7 @@ F 3 "~" H 2150 3950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L LoraClient-eagle-import:JV-KT K1
+L HotTubControl-rescue:JV-KT-LoraClient-eagle-import K1
 U 1 1 61660A14
 P 3700 4950
 F 0 "K1" H 3700 4950 50  0001 C CNN
@@ -40,7 +40,7 @@ Wire Wire Line
 Wire Wire Line
 	1950 3950 2000 3950
 $Comp
-L LoraClient-eagle-import:JV-KT K1
+L HotTubControl-rescue:JV-KT-LoraClient-eagle-import K1
 U 2 1 6166404C
 P 1750 3750
 F 0 "K1" V 1840 3750 50  0000 C CNN
@@ -231,7 +231,7 @@ Wire Wire Line
 	1650 5300 1800 5300
 Connection ~ 1650 5300
 $Comp
-L LoraClient-eagle-import:WEMOS-D1-MINI B1
+L HotTubControl-rescue:WEMOS-D1-MINI-LoraClient-eagle-import B1
 U 1 1 616A05F9
 P 5750 3700
 F 0 "B1" H 5750 4686 59  0000 C CNN
@@ -414,7 +414,7 @@ $EndComp
 Wire Wire Line
 	9300 4750 8400 4750
 $Comp
-L LoraClient-eagle-import:CPOL-EU085CS-1AR C2
+L Device:CP C2
 U 1 1 61684BD0
 P 1800 5100
 F 0 "C2" H 1893 5103 59  0000 L CNN
