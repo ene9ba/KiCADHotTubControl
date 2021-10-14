@@ -1,0 +1,15 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NE555DR
+D Single Precision Timer
+K
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
+$CMP JV-24S-KT
+D Electromechanical Relay 24VDC 2.88KOhm 5A SPST-NO (17.5x10x12.5)mm THT Power Relay
+K
+F https://componentsearchengine.com/Datasheets/1/JV-24S-KT.pdf
+$ENDCMP
+#
+#End Doc Library

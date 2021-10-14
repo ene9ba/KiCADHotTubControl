@@ -1,0 +1,707 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Fuse F1
+U 1 1 6165E7E0
+P 2150 3950
+F 0 "F1" V 1953 3950 50  0000 C CNN
+F 1 " T 250 mA" V 2044 3950 50  0000 C CNN
+F 2 "Fuse:Fuseholder_TR5_Littelfuse_No560_No460" V 2080 3950 50  0001 C CNN
+F 3 "~" H 2150 3950 50  0001 C CNN
+	1    2150 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L LoraClient-eagle-import:JV-KT K1
+U 1 1 61660A14
+P 3700 4950
+F 0 "K1" H 3700 4950 50  0001 C CNN
+F 1 "JV-KT" H 3750 5065 59  0001 L BNN
+F 2 "SamacSys_Parts:JV24SKT" H 3700 4950 50  0001 C CNN
+F 3 "" H 3700 4950 50  0001 C CNN
+	1    3700 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 3750 1950 3950
+Wire Wire Line
+	1950 3950 2000 3950
+$Comp
+L LoraClient-eagle-import:JV-KT K1
+U 2 1 6166404C
+P 1750 3750
+F 0 "K1" V 1840 3750 50  0000 C CNN
+F 1 "JV-KT" H 1800 3865 59  0001 L BNN
+F 2 "SamacSys_Parts:JV24SKT" H 1750 3750 50  0001 C CNN
+F 3 "" H 1750 3750 50  0001 C CNN
+	2    1750 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 6166FB8D
+P 3500 3750
+F 0 "#PWR0101" H 3500 3500 50  0001 C CNN
+F 1 "GND" H 3505 3577 50  0000 C CNN
+F 2 "" H 3500 3750 50  0001 C CNN
+F 3 "" H 3500 3750 50  0001 C CNN
+	1    3500 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Converter_ACDC:IRM-03-5 PS1
+U 1 1 6167099F
+P 3000 3450
+F 0 "PS1" H 3000 3817 50  0000 C CNN
+F 1 "IRM-03-5" H 3000 3726 50  0000 C CNN
+F 2 "Converter_ACDC:Converter_ACDC_MeanWell_IRM-03-xx_THT" H 3000 3100 50  0001 C CNN
+F 3 "https://www.meanwell.com/Upload/PDF/IRM-03/IRM-03-SPEC.PDF" H 3000 3050 50  0001 C CNN
+	1    3000 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 616724E4
+P 4450 4550
+F 0 "R2" H 4380 4504 50  0000 R CNN
+F 1 "R380" H 4380 4595 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 4380 4550 50  0001 C CNN
+F 3 "~" H 4450 4550 50  0001 C CNN
+	1    4450 4550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 61672C72
+P 1400 5150
+F 0 "C1" H 1515 5196 50  0000 L CNN
+F 1 "C" H 1515 5105 50  0000 L CNN
+F 2 "ene9ba_footprint:C050-025X075" H 1438 5000 50  0001 C CNN
+F 3 "~" H 1400 5150 50  0001 C CNN
+	1    1400 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC337 Q1
+U 1 1 61673E68
+P 3600 5350
+F 0 "Q1" H 3791 5396 50  0000 L CNN
+F 1 "BC337" H 3791 5305 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3800 5275 50  0001 L CIN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bc337.pdf" H 3600 5350 50  0001 L CNN
+	1    3600 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 61674775
+P 4450 5000
+F 0 "D1" V 4489 4882 50  0000 R CNN
+F 1 "LED" V 4398 4882 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 4450 5000 50  0001 C CNN
+F 3 "~" H 4450 5000 50  0001 C CNN
+	1    4450 5000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148 D2
+U 1 1 6167518F
+P 4000 5000
+F 0 "D2" V 3954 5080 50  0000 L CNN
+F 1 "1N4148" V 4045 5080 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4000 4825 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 4000 5000 50  0001 C CNN
+	1    4000 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female J3
+U 1 1 61675C8A
+P 9650 5200
+F 0 "J3" H 9678 5226 50  0000 L CNN
+F 1 "Massagepumpe" H 9678 5135 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 9650 5200 50  0001 C CNN
+F 3 "~" H 9650 5200 50  0001 C CNN
+	1    9650 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female J4
+U 1 1 616771FE
+P 9650 5600
+F 0 "J4" H 9678 5626 50  0000 L CNN
+F 1 "Filterpumpe" H 9678 5535 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 9650 5600 50  0001 C CNN
+F 3 "~" H 9650 5600 50  0001 C CNN
+	1    9650 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female J1
+U 1 1 616779C4
+P 9650 4300
+F 0 "J1" H 9678 4326 50  0000 L CNN
+F 1 "Wasser Vorlauf" H 9678 4235 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 9650 4300 50  0001 C CNN
+F 3 "~" H 9650 4300 50  0001 C CNN
+	1    9650 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female J2
+U 1 1 616793F3
+P 9650 4750
+F 0 "J2" H 9678 4776 50  0000 L CNN
+F 1 "Wasser Rücklauf" H 9678 4685 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 9650 4750 50  0001 C CNN
+F 3 "~" H 9650 4750 50  0001 C CNN
+	1    9650 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J5
+U 1 1 6167A1C5
+P 4550 2750
+F 0 "J5" H 4578 2726 50  0000 L CNN
+F 1 "Füllstandsensor" H 4578 2635 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 4550 2750 50  0001 C CNN
+F 3 "~" H 4550 2750 50  0001 C CNN
+	1    4550 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 3950 2600 3950
+Wire Wire Line
+	2600 3950 2600 3550
+Wire Wire Line
+	3400 3350 3500 3350
+Wire Wire Line
+	3500 3350 3500 3200
+Wire Wire Line
+	3500 3550 3500 3750
+Wire Wire Line
+	3400 3550 3500 3550
+$Comp
+L power:+3.3V #PWR0103
+U 1 1 6169D053
+P 8700 3300
+F 0 "#PWR0103" H 8700 3150 50  0001 C CNN
+F 1 "+3.3V" H 8715 3473 50  0000 C CNN
+F 2 "" H 8700 3300 50  0001 C CNN
+F 3 "" H 8700 3300 50  0001 C CNN
+	1    8700 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 6169E8F8
+P 1650 5550
+F 0 "#PWR0104" H 1650 5300 50  0001 C CNN
+F 1 "GND" H 1655 5377 50  0000 C CNN
+F 2 "" H 1650 5550 50  0001 C CNN
+F 3 "" H 1650 5550 50  0001 C CNN
+	1    1650 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 5000 1650 5000
+Wire Wire Line
+	1650 5000 1650 4700
+Connection ~ 1650 5000
+Wire Wire Line
+	1650 5000 1800 5000
+Wire Wire Line
+	1650 5550 1650 5300
+Wire Wire Line
+	1400 5300 1650 5300
+Wire Wire Line
+	1650 5300 1800 5300
+Connection ~ 1650 5300
+$Comp
+L LoraClient-eagle-import:WEMOS-D1-MINI B1
+U 1 1 616A05F9
+P 5750 3700
+F 0 "B1" H 5750 4686 59  0000 C CNN
+F 1 "WEMOS-D1-MINI" H 5750 4581 59  0000 C CNN
+F 2 "ene9ba_footprint:WEMOS-D1-MINI" H 5750 3700 50  0001 C CNN
+F 3 "" H 5750 3700 50  0001 C CNN
+	1    5750 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 616B331C
+P 3700 5750
+F 0 "#PWR0105" H 3700 5500 50  0001 C CNN
+F 1 "GND" H 3705 5577 50  0000 C CNN
+F 2 "" H 3700 5750 50  0001 C CNN
+F 3 "" H 3700 5750 50  0001 C CNN
+	1    3700 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 616B8F7F
+P 3250 5350
+F 0 "R1" V 3043 5350 50  0000 C CNN
+F 1 "10k" V 3134 5350 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 3180 5350 50  0001 C CNN
+F 3 "~" H 3250 5350 50  0001 C CNN
+	1    3250 5350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3700 5550 3700 5750
+Wire Wire Line
+	4450 4200 4450 4400
+Wire Wire Line
+	4450 4400 3700 4400
+Wire Wire Line
+	3700 4400 3700 4750
+Connection ~ 4450 4400
+Wire Wire Line
+	4450 4700 4450 4850
+Connection ~ 3700 4750
+Wire Wire Line
+	4000 4850 4000 4750
+Wire Wire Line
+	4000 4750 3700 4750
+Wire Wire Line
+	5050 3700 4100 3700
+Wire Wire Line
+	4100 3700 4100 4250
+Wire Wire Line
+	4100 4250 3100 4250
+Wire Wire Line
+	3100 4250 3100 5350
+$Comp
+L power:+3.3V #PWR0107
+U 1 1 616D0A28
+P 4700 3900
+F 0 "#PWR0107" H 4700 3750 50  0001 C CNN
+F 1 "+3.3V" H 4715 4073 50  0000 C CNN
+F 2 "" H 4700 3900 50  0001 C CNN
+F 3 "" H 4700 3900 50  0001 C CNN
+	1    4700 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 4300 9300 4300
+Wire Wire Line
+	9300 4300 9300 4750
+Wire Wire Line
+	9300 4750 9450 4750
+Wire Wire Line
+	9300 4750 9300 5200
+Wire Wire Line
+	9300 5200 9450 5200
+Connection ~ 9300 4750
+Wire Wire Line
+	9450 4200 8900 4200
+Wire Wire Line
+	8900 4200 8900 4650
+Wire Wire Line
+	8900 4650 9450 4650
+Connection ~ 8900 4200
+Wire Wire Line
+	8900 4650 8900 5100
+Wire Wire Line
+	8900 5100 9450 5100
+Connection ~ 8900 4650
+$Comp
+L power:GND #PWR0108
+U 1 1 616D1AB3
+P 9100 6150
+F 0 "#PWR0108" H 9100 5900 50  0001 C CNN
+F 1 "GND" H 9105 5977 50  0000 C CNN
+F 2 "" H 9100 6150 50  0001 C CNN
+F 3 "" H 9100 6150 50  0001 C CNN
+	1    9100 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 5300 9450 5300
+Wire Wire Line
+	9100 5300 9100 4850
+Wire Wire Line
+	9100 4850 9450 4850
+Connection ~ 9100 5300
+Wire Wire Line
+	9100 4850 9100 4400
+Wire Wire Line
+	9100 4400 9450 4400
+Connection ~ 9100 4850
+Wire Wire Line
+	5050 3800 4850 3800
+Wire Wire Line
+	4850 3800 4850 4750
+Wire Wire Line
+	9450 5500 8900 5500
+Wire Wire Line
+	8900 5500 8900 5100
+Connection ~ 8900 5100
+Wire Wire Line
+	9450 5600 9300 5600
+Wire Wire Line
+	9300 5600 9300 5200
+Connection ~ 9300 5200
+Wire Wire Line
+	9450 5700 9100 5700
+Wire Wire Line
+	9100 5300 9100 5700
+Connection ~ 9100 5700
+Wire Wire Line
+	9100 5700 9100 6150
+$Comp
+L power:GND #PWR0109
+U 1 1 616E1E95
+P 4350 3000
+F 0 "#PWR0109" H 4350 2750 50  0001 C CNN
+F 1 "GND" H 4355 2827 50  0000 C CNN
+F 2 "" H 4350 3000 50  0001 C CNN
+F 3 "" H 4350 3000 50  0001 C CNN
+	1    4350 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 616E33E9
+P 4350 2500
+F 0 "R3" H 4280 2454 50  0000 R CNN
+F 1 "1k2" H 4280 2545 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 4280 2500 50  0001 C CNN
+F 3 "~" H 4350 2500 50  0001 C CNN
+	1    4350 2500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4350 2300 4350 2350
+Wire Wire Line
+	4350 2650 4350 2750
+Wire Wire Line
+	4350 2750 4100 2750
+Wire Wire Line
+	4100 2750 4100 3600
+Wire Wire Line
+	4100 3600 5050 3600
+Connection ~ 4350 2750
+Wire Wire Line
+	4350 3000 4350 2850
+$Comp
+L Device:R R4
+U 1 1 616EE431
+P 8400 4500
+F 0 "R4" H 8330 4454 50  0000 R CNN
+F 1 "4k7" H 8330 4545 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 8330 4500 50  0001 C CNN
+F 3 "~" H 8400 4500 50  0001 C CNN
+	1    8400 4500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9300 4750 8400 4750
+$Comp
+L LoraClient-eagle-import:CPOL-EU085CS-1AR C2
+U 1 1 61684BD0
+P 1800 5100
+F 0 "C2" H 1893 5103 59  0000 L CNN
+F 1 "220uF 16V" H 1893 4998 59  0000 L CNN
+F 2 "Capacitor_THT:C_Radial_D10.0mm_H20.0mm_P5.00mm" H 1800 5100 50  0001 C CNN
+F 3 "" H 1800 5100 50  0001 C CNN
+	1    1800 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 5150 4000 5150
+Wire Wire Line
+	4000 5150 3700 5150
+Connection ~ 4000 5150
+Connection ~ 3700 5150
+$Comp
+L power:+5V #PWR0102
+U 1 1 61727D1E
+P 3500 3200
+F 0 "#PWR0102" H 3500 3050 50  0001 C CNN
+F 1 "+5V" H 3515 3373 50  0000 C CNN
+F 2 "" H 3500 3200 50  0001 C CNN
+F 3 "" H 3500 3200 50  0001 C CNN
+	1    3500 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0106
+U 1 1 6172B2A1
+P 4450 4200
+F 0 "#PWR0106" H 4450 4050 50  0001 C CNN
+F 1 "+5V" H 4465 4373 50  0000 C CNN
+F 2 "" H 4450 4200 50  0001 C CNN
+F 3 "" H 4450 4200 50  0001 C CNN
+	1    4450 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 4000 4700 4000
+Wire Wire Line
+	4700 4000 4700 3900
+$Comp
+L power:+5V #PWR0110
+U 1 1 6172F453
+P 6950 3850
+F 0 "#PWR0110" H 6950 3700 50  0001 C CNN
+F 1 "+5V" H 6965 4023 50  0000 C CNN
+F 2 "" H 6950 3850 50  0001 C CNN
+F 3 "" H 6950 3850 50  0001 C CNN
+	1    6950 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 4000 6950 4000
+Wire Wire Line
+	6950 4000 6950 3850
+$Comp
+L power:GND #PWR0111
+U 1 1 61732360
+P 6650 4150
+F 0 "#PWR0111" H 6650 3900 50  0001 C CNN
+F 1 "GND" H 6655 3977 50  0000 C CNN
+F 2 "" H 6650 4150 50  0001 C CNN
+F 3 "" H 6650 4150 50  0001 C CNN
+	1    6650 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 3900 6650 3900
+Wire Wire Line
+	6650 3900 6650 4150
+$Comp
+L power:+5V #PWR0112
+U 1 1 61734FF9
+P 1650 4700
+F 0 "#PWR0112" H 1650 4550 50  0001 C CNN
+F 1 "+5V" H 1665 4873 50  0000 C CNN
+F 2 "" H 1650 4700 50  0001 C CNN
+F 3 "" H 1650 4700 50  0001 C CNN
+	1    1650 4700
+	1    0    0    -1  
+$EndComp
+Connection ~ 1650 4700
+Wire Wire Line
+	1650 4700 1650 4650
+$Comp
+L power:+3.3V #PWR0113
+U 1 1 61738D7D
+P 4350 2300
+F 0 "#PWR0113" H 4350 2150 50  0001 C CNN
+F 1 "+3.3V" H 4365 2473 50  0000 C CNN
+F 2 "" H 4350 2300 50  0001 C CNN
+F 3 "" H 4350 2300 50  0001 C CNN
+	1    4350 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J6
+U 1 1 617860F2
+P 1050 3850
+F 0 "J6" H 968 3525 50  0000 C CNN
+F 1 "Conn_01x03" H 968 3616 50  0000 C CNN
+F 2 "ene9ba_footprint:236-503" H 1050 3850 50  0001 C CNN
+F 3 "~" H 1050 3850 50  0001 C CNN
+	1    1050 3850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1250 3950 1950 3950
+Connection ~ 1950 3950
+Wire Wire Line
+	1550 3750 1500 3750
+Wire Wire Line
+	1500 3750 1500 3850
+Wire Wire Line
+	1500 3850 1250 3850
+Wire Wire Line
+	1250 3750 1400 3750
+Wire Wire Line
+	1400 3750 1400 3350
+Wire Wire Line
+	1400 3350 2600 3350
+$Comp
+L Transistor_FET:BSS138 Q2
+U 1 1 6167DC55
+P 7700 4450
+F 0 "Q2" V 7949 4450 50  0000 C CNN
+F 1 "BSS138" V 8040 4450 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7900 4375 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 7700 4450 50  0001 L CNN
+	1    7700 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP3
+U 1 1 61680BC6
+P 8650 4200
+F 0 "JP3" H 8650 4405 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 8650 4314 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 8650 4200 50  0001 C CNN
+F 3 "~" H 8650 4200 50  0001 C CNN
+	1    8650 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0114
+U 1 1 61682294
+P 9100 3300
+F 0 "#PWR0114" H 9100 3150 50  0001 C CNN
+F 1 "+5V" H 9115 3473 50  0000 C CNN
+F 2 "" H 9100 3300 50  0001 C CNN
+F 3 "" H 9100 3300 50  0001 C CNN
+	1    9100 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 3500 8700 3300
+Wire Wire Line
+	9100 3500 9100 3300
+Wire Wire Line
+	8400 4200 8400 4350
+Wire Wire Line
+	8400 4200 8500 4200
+Wire Wire Line
+	8800 4200 8900 4200
+$Comp
+L Jumper:SolderJumper_3_Open JP4
+U 1 1 6167C7BE
+P 8900 3500
+F 0 "JP4" H 8900 3705 50  0000 C CNN
+F 1 "SolderJumper_3_Open" H 8900 3614 50  0000 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm" H 8900 3500 50  0001 C CNN
+F 3 "~" H 8900 3500 50  0001 C CNN
+	1    8900 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 3650 8900 4200
+$Comp
+L Device:R R6
+U 1 1 616AF154
+P 8050 4300
+F 0 "R6" H 7980 4254 50  0000 R CNN
+F 1 "1k0" H 7980 4345 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 7980 4300 50  0001 C CNN
+F 3 "~" H 8050 4300 50  0001 C CNN
+	1    8050 4300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 616B0BDB
+P 7350 4300
+F 0 "R5" H 7280 4254 50  0000 R CNN
+F 1 "1k0" H 7280 4345 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 7280 4300 50  0001 C CNN
+F 3 "~" H 7350 4300 50  0001 C CNN
+	1    7350 4300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8400 4650 8400 4750
+$Comp
+L Jumper:SolderJumper_3_Open JP2
+U 1 1 616B5B5E
+P 8250 4750
+F 0 "JP2" V 8296 4817 50  0000 L CNN
+F 1 "SolderJumper_3_Open" V 8205 4817 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm" H 8250 4750 50  0001 C CNN
+F 3 "~" H 8250 4750 50  0001 C CNN
+	1    8250 4750
+	0    -1   -1   0   
+$EndComp
+Connection ~ 8400 4750
+Wire Wire Line
+	7900 4550 8050 4550
+Wire Wire Line
+	8050 4450 8050 4550
+Connection ~ 8050 4550
+Wire Wire Line
+	8050 4550 8250 4550
+Wire Wire Line
+	7500 4550 7350 4550
+Wire Wire Line
+	7350 4550 7350 4450
+$Comp
+L power:+5V #PWR0115
+U 1 1 616C7599
+P 8050 3750
+F 0 "#PWR0115" H 8050 3600 50  0001 C CNN
+F 1 "+5V" H 8065 3923 50  0000 C CNN
+F 2 "" H 8050 3750 50  0001 C CNN
+F 3 "" H 8050 3750 50  0001 C CNN
+	1    8050 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0116
+U 1 1 616C832A
+P 7350 3750
+F 0 "#PWR0116" H 7350 3600 50  0001 C CNN
+F 1 "+3.3V" H 7365 3923 50  0000 C CNN
+F 2 "" H 7350 3750 50  0001 C CNN
+F 3 "" H 7350 3750 50  0001 C CNN
+	1    7350 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_3_Open JP1
+U 1 1 616D58E0
+P 7350 4750
+F 0 "JP1" V 7396 4817 50  0000 L CNN
+F 1 "SolderJumper_3_Open" V 7305 4817 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm" H 7350 4750 50  0001 C CNN
+F 3 "~" H 7350 4750 50  0001 C CNN
+	1    7350 4750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8250 4950 7350 4950
+Connection ~ 7350 4550
+Wire Wire Line
+	4850 4750 7200 4750
+Wire Wire Line
+	7500 4750 7500 5100
+Wire Wire Line
+	7500 5100 7200 5100
+Wire Wire Line
+	7200 5100 7200 4750
+Wire Wire Line
+	8050 3750 8050 4150
+Wire Wire Line
+	7350 3750 7350 3950
+$Comp
+L Device:R R7
+U 1 1 6176CAEB
+P 7700 4100
+F 0 "R7" H 7630 4054 50  0000 R CNN
+F 1 "0" H 7630 4145 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 7630 4100 50  0001 C CNN
+F 3 "~" H 7700 4100 50  0001 C CNN
+	1    7700 4100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7700 3950 7350 3950
+Connection ~ 7350 3950
+Wire Wire Line
+	7350 3950 7350 4150
+$EndSCHEMATC

@@ -1,0 +1,53 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model NE555DR
+#/6648/2/2.37/8/4/Integrated Circuit
+DEF NE555DR IC 0 30 Y Y 1 F N
+F0 "IC" 1050 600 50 H V L CNN
+F1 "NE555DR" 1050 500 50 H V L CNN
+F2 "SOIC127P600X175-8N" 1050 400 50 H I L CNN
+F3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" 1050 300 50 H I L CNN
+F4 "Single Precision Timer" 1050 200 50 H I L CNN "Description"
+F5 "1.75" 1050 100 50 H I L CNN "Height"
+F6 "Texas Instruments" 1050 0 50 H I L CNN "Manufacturer_Name"
+F7 "NE555DR" 1050 -100 50 H I L CNN "Manufacturer_Part_Number"
+F8 "595-NE555DR" 1050 -200 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.com/Search/Refine.aspx?Keyword=595-NE555DR" 1050 -300 50 H I L CNN "Mouser Price/Stock"
+F10 "1218414" 1050 -400 50 H I L CNN "RS Part Number"
+F11 "http//uk.rs-online.com/web/p/products/1218414" 1050 -500 50 H I L CNN "RS Price/Stock"
+DRAW
+X GND 1 600 -1000 200 U 50 50 0 0 B
+X TRIG 2 0 -400 200 R 50 50 0 0 B
+X OUT 3 1200 -200 200 L 50 50 0 0 B
+X ~RESET 4 0 0 200 R 50 50 0 0 B
+X CONT 5 500 600 200 D 50 50 0 0 B
+X THRES 6 0 -300 200 R 50 50 0 0 B
+X DISCH 7 0 -100 200 R 50 50 0 0 B
+X VCC 8 700 600 200 D 50 50 0 0 B
+P 5 0 1 6 200 400 1000 400 1000 -800 200 -800 200 400 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model JV-24S-KT
+#/1737048/244856/2.49/4/4/Relay or Contactor
+DEF JV-24S-KT K 0 30 Y Y 1 F N
+F0 "K" 1050 300 50 H V L CNN
+F1 "JV-24S-KT" 1050 200 50 H V L CNN
+F2 "JV24SKT" 1050 100 50 H I L CNN
+F3 "https://componentsearchengine.com/Datasheets/1/JV-24S-KT.pdf" 1050 0 50 H I L CNN
+F4 "Electromechanical Relay 24VDC 2.88KOhm 5A SPST-NO (17.5x10x12.5)mm THT Power Relay" 1050 -100 50 H I L CNN "Description"
+F5 "12.8" 1050 -200 50 H I L CNN "Height"
+F6 "817-JV-24S-KT" 1050 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Fujitsu/JV-24S-KT?qs=iGemwxQ2RfhmMiTcOdwTJw%3D%3D" 1050 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "FUJITSU" 1050 -500 50 H I L CNN "Manufacturer_Name"
+F9 "JV-24S-KT" 1050 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X COIL_1 1 0 -100 200 R 50 50 0 0 P
+X COM 2 1200 -100 200 L 50 50 0 0 P
+X NO 3 1200 0 200 L 50 50 0 0 P
+X COIL_2 4 0 0 200 R 50 50 0 0 P
+P 5 0 1 6 200 100 1000 100 1000 -200 200 -200 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library

@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name LoraClient-eagle-import)(type Legacy)(uri F:/Project/GitHub/KiCad/HotTubControl/LoraClient-eagle-import.lib)(options "")(descr ""))
+  (lib (name SamacSys_Parts)(type Legacy)(uri F:/Project/GitHub/KiCad/HotTubControl/SamacSys_Parts.lib)(options "")(descr ""))
+)
