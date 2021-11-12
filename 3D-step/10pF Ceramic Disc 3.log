@@ -1,0 +1,42 @@
+STEP in Solid Edge konvertieren
+Datum: Montag,November 08,2021 11:47
+Quelldatei: F:\Project\GitHub\KiCad\KiCADHotTubControl\3D-step\10pF Ceramic Disc 3.step
+Autor: Unbekannt
+Organisation: Unbekannt
+Ausgangssystem: SolidWorks 2013
+
+Hardware:
+Prozessor: AMD Ryzen 5 3600 6-Core Processor              
+Betriebssystem: Windows 10 Professional
+Installierter Speicher: 31.92 GB
+
+Software-Informationen
+Parasolid-Version: 32.1.222
+PSBodyShop-Version: 32.1.94
+Step-Adapterversion: 5.0.107
+Solid Edge-Version: 221.00.00.114 x64
+
+Step-Importoptionen
+Facettierte Körper importieren: Ein
+Prüfkörper importieren: Aus
+Kurven importieren: Ein
+DoNotSave importieren: Ein
+Mehrere Körper als Einzelteildatei importieren: Ein
+Flächenvernähung importieren: Ein
+Boolesche Körper importieren: Ein
+Basisformelement erstellen: Ein
+Geometrie vereinfachen: Ein
+Druckkurven importieren: Ein
+Führung importieren: C:
+Flächenvernähung importieren: Ein
+Flächen importieren: Ein
+Ausgabepfad importieren: F:\Project\GitHub\KiCad\KiCADHotTubControl\3D-step
+Aktivieren des standardmäßigen Ausgabepfads importieren: Ein
+PMI importieren: Aus
+Als interne Komponenten importieren: Aus
+Pfad importieren: 
+
+Übersetzen in Parasolid-Datentypen...
+F:\Project\GitHub\KiCad\KiCADHotTubControl\3D-step\10pF Ceramic Disc 3.par wird platziert
+Konvertierungsvorgang ist abgeschlossen
+Zur Übersetzung und Nachbearbeitung erforderte Gesamtzeit:00 : 00 : 01

@@ -208,28 +208,14 @@ $EndComp
 $Comp
 L power:GND #PWR0104
 U 1 1 6169E8F8
-P 1650 5550
-F 0 "#PWR0104" H 1650 5300 50  0001 C CNN
-F 1 "GND" H 1655 5377 50  0000 C CNN
-F 2 "" H 1650 5550 50  0001 C CNN
-F 3 "" H 1650 5550 50  0001 C CNN
-	1    1650 5550
+P 1600 5550
+F 0 "#PWR0104" H 1600 5300 50  0001 C CNN
+F 1 "GND" H 1605 5377 50  0000 C CNN
+F 2 "" H 1600 5550 50  0001 C CNN
+F 3 "" H 1600 5550 50  0001 C CNN
+	1    1600 5550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1400 5000 1650 5000
-Wire Wire Line
-	1650 5000 1650 4700
-Connection ~ 1650 5000
-Wire Wire Line
-	1650 5000 1800 5000
-Wire Wire Line
-	1650 5550 1650 5300
-Wire Wire Line
-	1400 5300 1650 5300
-Wire Wire Line
-	1650 5300 1800 5300
-Connection ~ 1650 5300
 $Comp
 L HotTubControl-rescue:WEMOS-D1-MINI-LoraClient-eagle-import B1
 U 1 1 616A05F9
@@ -489,17 +475,14 @@ Wire Wire Line
 $Comp
 L power:+5V #PWR0112
 U 1 1 61734FF9
-P 1650 4700
-F 0 "#PWR0112" H 1650 4550 50  0001 C CNN
-F 1 "+5V" H 1665 4873 50  0000 C CNN
-F 2 "" H 1650 4700 50  0001 C CNN
-F 3 "" H 1650 4700 50  0001 C CNN
-	1    1650 4700
+P 1600 4700
+F 0 "#PWR0112" H 1600 4550 50  0001 C CNN
+F 1 "+5V" H 1615 4873 50  0000 C CNN
+F 2 "" H 1600 4700 50  0001 C CNN
+F 3 "" H 1600 4700 50  0001 C CNN
+	1    1600 4700
 	1    0    0    -1  
 $EndComp
-Connection ~ 1650 4700
-Wire Wire Line
-	1650 4700 1650 4650
 $Comp
 L power:+3.3V #PWR0113
 U 1 1 61738D7D
@@ -511,30 +494,9 @@ F 3 "" H 4350 2300 50  0001 C CNN
 	1    4350 2300
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x03 J6
-U 1 1 617860F2
-P 1050 3850
-F 0 "J6" H 968 3525 50  0000 C CNN
-F 1 "Conn_01x03" H 968 3616 50  0000 C CNN
-F 2 "ene9ba_footprint:236-503" H 1050 3850 50  0001 C CNN
-F 3 "~" H 1050 3850 50  0001 C CNN
-	1    1050 3850
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1250 3950 1950 3950
 Connection ~ 1950 3950
 Wire Wire Line
 	1550 3750 1500 3750
-Wire Wire Line
-	1500 3750 1500 3850
-Wire Wire Line
-	1500 3850 1250 3850
-Wire Wire Line
-	1250 3750 1400 3750
-Wire Wire Line
-	1400 3750 1400 3350
 Wire Wire Line
 	1400 3350 2600 3350
 $Comp
@@ -704,4 +666,212 @@ Wire Wire Line
 Connection ~ 7350 3950
 Wire Wire Line
 	7350 3950 7350 4150
+$Comp
+L power:+5V #PWR0117
+U 1 1 618D82FF
+P 4450 6100
+F 0 "#PWR0117" H 4450 5950 50  0001 C CNN
+F 1 "+5V" H 4465 6273 50  0000 C CNN
+F 2 "" H 4450 6100 50  0001 C CNN
+F 3 "" H 4450 6100 50  0001 C CNN
+	1    4450 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 618D957A
+P 4450 6400
+F 0 "R8" H 4380 6354 50  0000 R CNN
+F 1 "R380" H 4380 6445 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 4380 6400 50  0001 C CNN
+F 3 "~" H 4450 6400 50  0001 C CNN
+	1    4450 6400
+	-1   0    0    1   
+$EndComp
+$Comp
+L HotTubControl-rescue:JV-KT-LoraClient-eagle-import K2
+U 1 1 618DA08B
+P 3800 6350
+F 0 "K2" H 3800 6350 50  0001 C CNN
+F 1 "JV-KT" H 3850 6465 59  0001 L BNN
+F 2 "SamacSys_Parts:JV24SKT" H 3800 6350 50  0001 C CNN
+F 3 "" H 3800 6350 50  0001 C CNN
+	1    3800 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D3
+U 1 1 618DD5D3
+P 4100 6400
+F 0 "D3" V 4054 6480 50  0000 L CNN
+F 1 "1N4148" V 4145 6480 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4100 6225 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 4100 6400 50  0001 C CNN
+	1    4100 6400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D4
+U 1 1 618DED1E
+P 4450 6800
+F 0 "D4" V 4489 6682 50  0000 R CNN
+F 1 "LED" V 4398 6682 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 4450 6800 50  0001 C CNN
+F 3 "~" H 4450 6800 50  0001 C CNN
+	1    4450 6800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Transistor_BJT:BC337 Q3
+U 1 1 618DF9A8
+P 3700 7200
+F 0 "Q3" H 3891 7246 50  0000 L CNN
+F 1 "BC337" H 3891 7155 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3900 7125 50  0001 L CIN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bc337.pdf" H 3700 7200 50  0001 L CNN
+	1    3700 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 618E161A
+P 3200 7200
+F 0 "R9" V 2993 7200 50  0000 C CNN
+F 1 "10k" V 3084 7200 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 3130 7200 50  0001 C CNN
+F 3 "~" H 3200 7200 50  0001 C CNN
+	1    3200 7200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0118
+U 1 1 618E1F2A
+P 3800 7550
+F 0 "#PWR0118" H 3800 7300 50  0001 C CNN
+F 1 "GND" H 3805 7377 50  0000 C CNN
+F 2 "" H 3800 7550 50  0001 C CNN
+F 3 "" H 3800 7550 50  0001 C CNN
+	1    3800 7550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 6100 4450 6150
+Wire Wire Line
+	4450 6550 4450 6650
+Wire Wire Line
+	4450 6950 3800 6950
+Wire Wire Line
+	3800 6950 3800 7000
+Wire Wire Line
+	4100 6550 3800 6550
+Wire Wire Line
+	4100 6250 4100 6150
+Wire Wire Line
+	4100 6150 3800 6150
+Wire Wire Line
+	4100 6150 4450 6150
+Connection ~ 4100 6150
+Connection ~ 4450 6150
+Wire Wire Line
+	4450 6150 4450 6250
+Wire Wire Line
+	3800 6550 3800 6950
+Connection ~ 3800 6550
+Connection ~ 3800 6950
+Wire Wire Line
+	3500 7200 3350 7200
+Wire Wire Line
+	5050 3500 4000 3500
+Wire Wire Line
+	4000 3500 4000 4150
+Wire Wire Line
+	4000 4150 3000 4150
+Wire Wire Line
+	3000 4150 3000 7200
+Wire Wire Line
+	3000 7200 3050 7200
+$Comp
+L HotTubControl-rescue:JV-KT-LoraClient-eagle-import K2
+U 2 1 61907E3E
+P 1750 4250
+F 0 "K2" V 1840 4250 50  0000 C CNN
+F 1 "JV-KT" H 1800 4365 59  0001 L BNN
+F 2 "SamacSys_Parts:JV24SKT" H 1750 4250 50  0001 C CNN
+F 3 "" H 1750 4250 50  0001 C CNN
+	2    1750 4250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1950 4250 1950 3950
+Wire Wire Line
+	3800 7400 3800 7550
+$Comp
+L HotTubControl-rescue:Wagoklemme-4polig236-504_332-000-ene9ba_library J6
+U 1 1 618FBF2D
+P 1250 4300
+F 0 "J6" H 1492 3207 60  0000 C CNN
+F 1 "Wagoklemme-4polig236-504_332-000" H 1492 3313 60  0000 C CNN
+F 2 "ene9ba_footprint:WAGOKlemme4pol" H 1492 3419 60  0000 C CNN
+F 3 "" H 1250 4300 60  0000 C CNN
+	1    1250 4300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1250 3700 1250 3650
+Wire Wire Line
+	1250 3800 1250 3850
+Wire Wire Line
+	1500 3750 1500 4050
+Wire Wire Line
+	1950 3950 1600 3950
+Wire Wire Line
+	1600 3950 1600 3850
+Wire Wire Line
+	1600 3850 1250 3850
+Connection ~ 1250 3850
+Wire Wire Line
+	1250 3850 1250 3900
+Wire Wire Line
+	1400 3350 1400 3650
+Wire Wire Line
+	1400 3650 1250 3650
+Connection ~ 1250 3650
+Wire Wire Line
+	1250 3650 1250 3600
+Wire Wire Line
+	1250 4200 1250 4250
+Wire Wire Line
+	1250 4000 1250 4100
+Wire Wire Line
+	1500 4050 1400 4050
+Wire Wire Line
+	1400 4050 1400 4250
+Wire Wire Line
+	1400 4250 1250 4250
+Connection ~ 1250 4250
+Wire Wire Line
+	1250 4250 1250 4300
+Wire Wire Line
+	1550 4250 1550 4100
+Wire Wire Line
+	1550 4100 1250 4100
+Connection ~ 1250 4100
+Wire Wire Line
+	1800 5300 1800 5250
+Wire Wire Line
+	1400 5300 1600 5300
+Wire Wire Line
+	1800 4950 1600 4950
+Wire Wire Line
+	1400 4950 1400 5000
+Wire Wire Line
+	1600 4700 1600 4950
+Connection ~ 1600 4950
+Wire Wire Line
+	1600 4950 1400 4950
+Wire Wire Line
+	1600 5550 1600 5300
+Connection ~ 1600 5300
+Wire Wire Line
+	1600 5300 1800 5300
 $EndSCHEMATC

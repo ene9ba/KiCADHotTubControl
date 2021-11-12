@@ -2,4 +2,5 @@
   (lib (name LoraClient-eagle-import)(type Legacy)(uri F:/Project/GitHub/KiCad/HotTubControl/LoraClient-eagle-import.lib)(options "")(descr ""))
   (lib (name SamacSys_Parts)(type Legacy)(uri F:/Project/GitHub/KiCad/HotTubControl/SamacSys_Parts.lib)(options "")(descr ""))
   (lib (name HotTubControl-rescue)(type Legacy)(uri ${KIPRJMOD}/HotTubControl-rescue.lib)(options "")(descr ""))
+  (lib (name ene9ba_library)(type Legacy)(uri ${KIPRJMOD}/ene9ba_library.lib)(options "")(descr ""))
 )
